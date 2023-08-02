@@ -1,213 +1,130 @@
-![Gatsby E-commerce theme designed by Matter](https://user-images.githubusercontent.com/43764894/223762927-2e463570-b09a-4d51-ab81-2e0fa8aa2c70.png)
+# CW3D NFT Explorer For Netlify
 
-This beautiful theme from the [Matter Design Team](https://matterdesign.com.au/) gives you the styling and scaffolding for your next e-commerce site. You can customize to your heart's content and add the tooling for cart, transactions, product, and more. This theme uses:
+This boilerplate is set up to be deployed on Netlify and you can directly deploy this project by clicking the button below:
 
-- [Gatsby](https://www.gatsbyjs.com/)
-- [CSS Modules](https://github.com/css-modules/css-modules)
-- [Prettier](https://prettier.io/)
-- [React Helmet](https://github.com/nfl/react-helmet)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/alchemyplatform/netlify-alchemy-nft-explorer-template)
 
-Take a look at the screenshot below or preview the live site here: https://gatsby-ecommerce-theme.netlify.app/!
-![full page screenshot](https://res.cloudinary.com/dzkoxrsdj/image/upload/v1653371030/CleanShot_2022-05-24_at_01.11.52_2x_bspa8c.jpg)
 
-> 🧐 Please be aware that some aspects of this theme are not fully functional and will need to be integrated with the recommended tooling mentioned at the end of the [README](#next-steps-with-this-theme). 
+![image](https://user-images.githubusercontent.com/72762629/235919616-ba92fb9e-c171-4d7f-a928-862c80009075.png)
 
-## Table of Contents:
+## Resources
+Please refer to CW3D's documentation and the following useful links for an in depth explanation of how to work with projects bootstrapped with CW3D:
 
-- [Quick Steps + Deploy Options](#quick-setup--deploy-option)
-  - [Cloning + Installing Packages](#cloning--installing-packages)
-- [Deploying](#deploying)
-- [Project Structure](#project-structure)
-  - [Making Changes to the Hero Component](#making-changes-to-the-hero-component)
-  - [Making Changes to the Header or Footer](#making-content-changes-to-the-header-or-footer)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
-  - [Removing Cypress](#removing-cypress)
-- [Next Steps with This Theme](#next-steps-with-this-theme)
+-   [Docs](https://docs.alchemy.com/docs/create-web3-dapp) - Everything you need to know when using CW3D
+-   [GitHub](https://github.com/alchemyplatform/create-web3-dapp) - look at the extensive code example or start contributing
+-   [Website](https://createweb3dapp.alchemy.com) - Learn more about CW3D and add components to your project
+-   [Templates](https://createweb3dapp.alchemy.com/#templates) - Check out the pre-built project templates
+-   [Components Library](https://createweb3dapp.alchemy.com/#components) - Add features directly to your project through components
+-   [Examples](https://github.com/alchemyplatform/create-web3-dapp-examples) - See the components implemented in a real world dapp
+-   [Community](https://t.me/createweb3dapp) - Meet other builders, get support, and give feedback!
 
-## Quick Setup + Deploy Option
+## Overview
 
-Click the button below and it will help you create a new repo, create a new Netlify project, and deploy this Theme!
+This project serves as a starting point for creating decentralized NFT Explorer (dApps) using [Create Web3 Dapp](https://github.com/alchemyplatform/create-web3-dapp). It is preconfigured to be deployed on [Netlify](https://www.netlify.com/), providing you with a seamless way to get your dApp up and running in no time.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/gatsby-ecommerce-theme&utm_source=github&utm_medium=matter-design-theme-repo&utm_campaign=template-team)
+This boilerplate is built using [CW3D (Create Web3 Dapp)](https://github.com/alchemyplatform/create-web3-dapp), a powerful tool developed by [Alchemy](https://www.alchemy.com/) that allows developers to rapidly create and deploy dApps.
 
-## Regular Setup
+## What's Included?
 
- ### Cloning + Installing Packages
- 
-  - Clone this repo with one of these options:
+This boilerplate has everything you need to start building a dapp:
 
-    - Click the 'Use this template' button at the top of the page
-    - Via the command line:
-       ```shell
-       git clone https://github.com/netlify-templates/gatsby-ecommerce-theme/
-       ```
-    - Or you can clone the theme straight from the Netlify CLI, using the `netlify sites:create-template` command in your terminal ([learn more about this command here](https://www.netlify.com/blog/create-a-site-from-a-template-using-the-netlify-cli)) to do the entire flow for you.
+- Next.js
+- Wagmi Hooks
+- Ethers.js
+- Rainbowkit
+- Alchemy SDK
 
-  From there, you can install the project's dependencies by running:
+## Supported Chains
 
-  ```shell
-  npm install or yarn install
-  ```
+The project supports all the major EVM chains:
 
-  Finally, you can run your project locally with:
+ - Ethereum
+ - Polygon
+ - Arbitrum
+ - Optimism
 
-  ```shell
-  cd gatsby-sydney-ecommerce-theme/
-  npm start or yarn start
-  ```
-  
-  or, run it using the Netlify CLI with:
-  
-  ```shell
-  netlify run dev
-  ```
-  
-  Open your browser and visit <http://localhost:5000>, your project should now be running!
-  
-  ## Deploying
- 
-  After installing and customizing your new e-commerce theme it's now time to deploy! 
-  
-   -  You can Deploy using the [Netlify CLI](https://cli.netlify.com/):
+## Getting Started
 
-      ```bash
-      netlify init # initialize a new Netlify project & deploy
-      ```
+### Prerequisites
 
-   It will use the information from the included Netlify configuration file, [`netlify.toml`](./netlify.toml), to set up the build command as `gatsby build` to create a static project and locate the build project in the `public` directory.
+To get started with this boilerplate, you'll need to have the following software installed on your local machine:
 
-   The `init` process will also set up continuous deployment for your project so that a new build will be triggered & deployed when you push code to the repo (you can change this from your project dashboard: Site Settings/Build & deploy/Continuous Deployment).
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
 
-   You can also use `netlify deploy (--prod)` to manually deploy and `netlify open` to open your project dashboard.
+### Installation
 
-  > 💡 we only have so many keystrokes to give, use `ntl` shorthand for `netlify` or make [an alias of your own](https://www.netlify.com/blog/2020/04/12/speed-up-productivity-with-terminal-aliases/) to save hours...of accumulated milliseconds
+1. Clone the repository to your local machine:
+   ```
+   git clone https://github.com/alchemyplatform/netlify-alchemy-nft-explorer-template
+   ```
+2. Navigate to the project directory:
+   ```
+   cd netlify-alchemy-nft-explorer-template
+   ```
+3. Install the required dependencies:
+   ```
+   yarn install
+   ```
 
-  - You can deploy within the Netlify site by connecting to git, this [video](https://www.youtube.com/watch?v=4h8B080Mv4U&t=107s) will walk you through that process. 
-  - Or, you can use the Deploy to Netlify button which will walk you through the process of spinning up a repo, creating a new project in Netlify, AND deploying it :)
+### Running the Project
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/gatsby-ecommerce-theme&utm_source=github&utm_medium=matter-design-theme-repo&utm_campaign=template-team)
+1. Start the local development server:
+   ```
+   yarn run dev
+   ```
+2. Open your browser and navigate to [`http://localhost:3000/`](http://localhost:3000/) to view the dApp in action.
+
+### Deploying to Netlify
+
+This boilerplate is set up to be deployed on Netlify and you can directly deploy this project by clicking the button below:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/alchemyplatform/netlify-alchemy-dapp-boilerplates)
+
+ If you prefer to deploy it manually, you can follow these steps:
+
+1. Sign up for a Netlify account at [netlify.com](https://www.netlify.com/) if you don't already have one.
+2. Install the Netlify CLI:
+   ```
+   npm install -g netlify-cli
+   ```
+3. Run the following command to deploy your dApp to Netlify:
+   ```
+   netlify deploy
+   ```
+4. Follow the prompts and provide the required information. Your dApp will be deployed and accessible via a unique URL.
 
 ## Project Structure
 
-Here is a bit of an overview of the directory structure of the project:
+The boilerplate consists of one root directory:
 
-| Directory | Description |
-| :---- | :---- |
-| `src/components/` | Stores reusable elements across the site. (e.g. BlogPreview element) |
-| `src/pages/` | Stores routes for a user to go to based on each `.js` file and nested folder (e.g. `src/pages/about.js` creates a route `/about` in the web app) |
-| `src/helpers` | Stores mock data for the blog or product list and general utility functions. |
-
-### Making changes to the Hero component
-
-On the homepage of the website and a few other places, there is a full-width image component. We refer to this as the `<Hero/>` component. Here is a bit of an overview of what its API looks like:
-
-```jsx
-<Hero
-  maxWidth='500px' // how big the image's maxumim should be
-  image={'/banner1.png'} // the source location for the image
-  title={'Essentials for a cold winter'} // the main text displayed
-  subtitle={'Discover Autumn Winter 2021'} // text found below the main text
-  ctaText={'shop now'} // the presented text for a user to click on
-  ctaAction={goToShop} // the location the call-to-action text directs users
-/>
+```
+📦root
+ ┣ 📂components
+ ┃ ┣ 📂navigation
+ ┃ ┃ ┗ 📜navbar.jsx
+ ┃ ┗ 📜nftGallery.jsx
+ ┣ 📂layout
+ ┃ ┗ 📜mainLayout.jsx
+ ┣ 📂pages
+ ┃ ┣ 📂api
+ ┃ ┃ ┣ 📜getNftsForCollection.js
+ ┃ ┃ ┗ 📜getNftsForOwner.js
+ ┃ ┣ 📜_app.js
+ ┃ ┗ 📜index.jsx
+ ┣ 📂public
+ ┃ ┗ 📜alchemy_logo.svg
+ ┣ 📂styles
+ ┃ ┣ 📜Home.module.css
+ ┃ ┣ 📜Navbar.module.css
+ ┃ ┣ 📜NftGallery.module.css
+ ┃ ┗ 📜globals.css
+ ┣ 📜.env.local
+ ┣ 📜.gitignore
+ ┣ 📜README.md
+ ┣ 📜package-lock.json
+ ┗ 📜package.json
 ```
 
-You can see it in action under [`src/pages/index.js`](./src/pages/index.js) or see the component in [`src/components/Hero/Hero.js`](./src/components/Hero/Hero.js).
-
-### Making content changes to the Header or Footer
-
-The project contains a file named `src/config.json`. Inside of this file describes the content of the header links (`headerLinks`) as well as the footer links (`footerLinks`). For the header, each element in the array has a base structure of:
-
-```json
-{
-  "menuLabel": "The label that is given to a user",
-  "menuLink": "The URL that this should take a user to"
-}
-```
-
-If you want the menu item to have a dropdown, you can also add a `category` key with the value being an array of the categories and their containing elements, here's what the base could look like:
-
-```json
-{
-  "menuLabel": "The label that is given to a user",
-  "menuLink": "The URL that this should take a user to",
-  "category": [
-    {
-      "categoryLabel": "Label you want the category to have",
-      "submenu": [
-        {
-          "menuLabel": "A label underneath the category",
-          "menuLink": "The associated link to this label"
-        }
-      ]
-    }
-  ]
-}
-```
-
-The footer works in a similar way. It assumes each element in the array has a heading and an array of associated links to direct folks to:
-
-```json
-"footerLinks": [
-    {
-      "subTitle": "Label of the column in the footer",
-      "links": [
-        {
-          "text": "Text to display to the user",
-          "link": "URL of where to take the user to when clicked"
-        },
-      ]
-    }
-]
-```
-
-## Testing
-
-### Included Default Testing
-
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
-
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
-- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
-
-If your team is not interested in this tooling, you can remove them with ease!
-
-### Removing Renovate
-
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
-
-### Removing Cypress
-
-For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testing. This makes sure that we can validate that our templates are rendering and displaying as we’d expect. By default, we have Cypress not generate deploy links if our tests don’t pass. If you’d like to keep Cypress and still generate the deploy links, go into your `netlify.toml` and delete the plugin configuration lines:
-
-```diff
-[[plugins]]
-  package = "netlify-plugin-cypress"
--  [plugins.inputs.postBuild]
--    enable = true
--
--  [plugins.inputs]
--    enable = false
-```
-
-If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
-
-```bash
-npm uninstall -D netlify-plugin-cypress
-```
-
-And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
-
-```bash
-npm uninstall cypress
-```
-
-## Next Steps with this theme
-
-This project is intended to be extended by you! We wanted to make possible to replace parts of it with your own tools and data sources. If you're interested on a direction, you can refer to Matter's [how to use section](https://gatsby-ecommerce-theme.netlify.app/how-to-use/) in this project or you may want to consider using [Matter's toolset with their JAMM framework](https://matterdesign.com.au/service/headless-commerce-with-jamm/) which includes some projects like:
-- [BigCommerce](https://bigcommerce.zfrcsk.net/c/2429593/854992/2941) for a headless e-commerce solution
-- [Builder](https://www.builder.io) as a CMS for the blog articles or other content creation
-- [Klaviyo](https://www.klaviyo.com/) for any email or SMS marketing automation
+Start editing the `pages/index.jsx` file in the root directory to customize the project according to your own needs!
